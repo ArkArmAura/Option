@@ -121,40 +121,160 @@ class option extends index {
     }
 
 
-    class minus extends index {
-        // Class to differentiate numbers
-        public static void main() {
-            while (true) {
-                System.out.println("enter the first no from which you want to subtract :~~");
-                float a = sc.nextInt();
-                System.out.println("-");
-                float b = sc.nextInt();
-                System.out.println(a + " - " + b + " is :~~");
-                float c = a - b;
-                System.out.println("=   " + c);
-                System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
-                String dj = sc.next();
-                if (dj.equals("y")) {
-                    break;
+}
 
 
-                } else if (dj.equals("n")) {
-                    System.out.println("welcome again :)");
-                    continue;
+class minus extends index {
+    // Class to differentiate numbers
+    public static void main() {
+        while (true) {
+            System.out.println("enter the first no from which you want to subtract :~~");
+            float a = sc.nextInt();
+            System.out.println("-");
+            float b = sc.nextInt();
+            System.out.println(a + " - " + b + " is :~~");
+            float c = a - b;
+            System.out.println("=   " + c);
+            System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
+            String dj = sc.next();
+            if (dj.equals("y")) {
+                break;
 
-                } else if (dj.equals("m")) {
 
-                    option.main();
+            } else if (dj.equals("n")) {
+                System.out.println("welcome again :)");
+                continue;
+
+            } else if (dj.equals("m")) {
+
+                option.main();
 
 
-                } else {
+            } else {
 
-                    System.out.println("invalid input");
-                    System.out.println("try again!!");
-                    break;
+                System.out.println("invalid input");
+                System.out.println("try again!!");
+                break;
 
-                }
+            }
 
+
+        }
+
+
+    }
+
+
+}
+
+class sum extends index {
+    // Class to add the numbers
+    public static void main() {
+        while (true) {
+            System.out.println("enter the first no you want to add billow :~~");
+            float a = sc.nextInt();
+            System.out.println("+");
+            float b = sc.nextInt();
+            System.out.println("The sum of" + a + "and" + b + " is :~~");
+            float c = a + b;
+            System.out.println("=   " + c);
+            System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
+            String dj = sc.next();
+            if (dj.equals("y")) {
+                break;
+
+
+            } else if (dj.equals("n")) {
+                System.out.println("welcome again :)");
+                continue;
+            } else if (dj.equals("m")) {
+
+                option.main();
+
+
+            } else {
+
+                System.out.println("invalid input");
+                System.out.println("try again!!");
+                break;
+
+
+            }
+        }
+
+    }
+}
+
+class divideS extends index {
+    // Class to divide numbers
+    public static void main() {
+        while (true) {
+            System.out.println("enter the two want to divide billow :~~");
+            float a = sc.nextInt();
+            System.out.println("enter the next no through which you want to divide:~~");
+            float b = sc.nextInt();
+            System.out.println(a + " / " + b + " is :~~");
+            float c = a / b;
+            System.out.println("=   " + c);
+            System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "( for menu enter m)");
+            String dj = sc.next();
+            if (dj.equals("y")) {
+                break;
+
+
+            } else if (dj.equals("n")) {
+                System.out.println("welcome again :)");
+                continue;
+            } else if (dj.equals("m")) {
+
+                option.main();
+
+
+            } else {
+
+                System.out.println("invalid input");
+                System.out.println("try again!!");
+                break;
+            }
+
+
+        }
+    }
+}
+
+
+class multiply extends index {
+    // Class for the multiplication option in the option main()
+    public static void main() {
+
+        while (true) {
+            System.out.println("enter the number want to multiply billow :~~");
+            float a = sc.nextInt();
+            System.out.println("enter the next no billow through which you want to multiply:~~");
+            float b = sc.nextInt();
+            System.out.println(a + " x " + b + " is :~~");
+            float c = a * b;
+            System.out.println("=   " + c);
+            System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "( for menu enter m)");
+            String dj = sc.next();
+            if (dj.equals("y")) {
+                break;
+
+
+            } else if (dj.equals("n")) {
+
+                System.out.println("welcome again :)");
+                continue;
+            } else if (dj.equals("m")) {
+
+                option.main();
+
+
+            } else {
+
+                System.out.println("invalid input");
+                System.out.println("try again!!");
+                break;
 
             }
 
@@ -165,118 +285,44 @@ class option extends index {
     }
 
 
-    class sum extends index {
-        // Class to add the numbers
-        public static void main() {
-            while (true) {
-                System.out.println("enter the first no you want to add billow :~~");
-                float a = sc.nextInt();
-                System.out.println("+");
-                float b = sc.nextInt();
-                System.out.println("The sum of" + a + "and" + b + " is :~~");
-                float c = a + b;
-                System.out.println("=   " + c);
-                System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
-                String dj = sc.next();
-                if (dj.equals("y")) {
-                    break;
+}
 
+class factorial extends index {
+    // Class to check factorial
+    public static void main() {
 
-                } else if (dj.equals("n")) {
-                    System.out.println("welcome again :)");
-                    continue;
-                } else if (dj.equals("m")) {
+        while (true) {
+            System.out.println("enter the number want to calculate the factorial of :~~");
+            long number = Long.parseLong(sc.next());
+            BigInteger fact = new BigInteger("1");
+            long i;
+            for (i = 1; i <= number; i++) {
 
-                    option.main();
-
-
-                } else {
-
-                    System.out.println("invalid input");
-                    System.out.println("try again!!");
-                    break;
-
-
-                }
+                fact = fact.multiply(BigInteger.valueOf(i));
             }
-
-        }
-    }
-
-
-    class divideS extends index {
-        // Class to divide numbers
-        public static void main() {
-            while (true) {
-                System.out.println("enter the two want to divide billow :~~");
-                float a = sc.nextInt();
-                System.out.println("enter the next no through which you want to divide:~~");
-                float b = sc.nextInt();
-                System.out.println(a + " / " + b + " is :~~");
-                float c = a / b;
-                System.out.println("=   " + c);
-                System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "( for menu enter m)");
-                String dj = sc.next();
-                if (dj.equals("y")) {
-                    break;
+            
+            
+            System.out.println("The factorial of " + number + " is :-  " + fact);
+            System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "( for menu enter m)");
+            String dj = sc.next();
+            if (dj.equals("y")) {
+                break;
 
 
-                } else if (dj.equals("n")) {
-                    System.out.println("welcome again :)");
-                    continue;
-                } else if (dj.equals("m")) {
+            } else if (dj.equals("n")) {
 
-                    option.main();
+                System.out.println("welcome again :)");
+                continue;
+            } else if (dj.equals("m")) {
 
-
-                } else {
-
-                    System.out.println("invalid input");
-                    System.out.println("try again!!");
-                    break;
-                }
+                option.main();
 
 
-            }
-        }
-    }
+            } else {
 
-
-    class multiply extends index {
-        // Class for the multiplication option in the option main()
-        public static void main() {
-
-            while (true) {
-                System.out.println("enter the number want to multiply billow :~~");
-                float a = sc.nextInt();
-                System.out.println("enter the next no billow through which you want to multiply:~~");
-                float b = sc.nextInt();
-                System.out.println(a + " x " + b + " is :~~");
-                float c = a * b;
-                System.out.println("=   " + c);
-                System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "( for menu enter m)");
-                String dj = sc.next();
-                if (dj.equals("y")) {
-                    break;
-
-
-                } else if (dj.equals("n")) {
-
-                    System.out.println("welcome again :)");
-                    continue;
-                } else if (dj.equals("m")) {
-
-                    option.main();
-
-
-                } else {
-
-                    System.out.println("invalid input");
-                    System.out.println("try again!!");
-                    break;
-
-                }
-
+                System.out.println("invalid input");
+                System.out.println("try again!!");
+                break;
 
             }
 
@@ -285,110 +331,68 @@ class option extends index {
 
 
     }
-
-    class factorial extends index {
-        // Class to check factorial
-        public static void main() {
-
-            while (true) {
-                System.out.println("enter the number want to calculate the factorial of :~~");
-                long a = Integer.parseInt(sc.next());
-                BigInteger b = new BigInteger("1");
-                long i;
-                for (i = 1; i <= a; i++) {
-
-                    b = b.multiply(BigInteger.valueOf(a));
-                }
-                System.out.println("The factorial of " + a + "is :-  " + b);
-                System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "( for menu enter m)");
-                String dj = sc.next();
-                if (dj.equals("y")) {
-                    break;
+}
 
 
-                } else if (dj.equals("n")) {
+class evenOdd extends index {
+    // Class to check even or odd
+    public static void main() {
 
-                    System.out.println("welcome again :)");
-                    continue;
-                } else if (dj.equals("m")) {
+        while (true) {
+            System.out.println("enter the number you want to check");
+            int a = sc.nextInt();
+            if (a % 2 == 0) {
+                System.out.println(a + "is even");
+            } else {
+                System.out.println(a + "is odd");
+            }
 
-                    option.main();
+            System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
+            String dj = sc.next();
+            if (dj.equals("y")) {
+                break;
 
 
-                } else {
+            } else if (dj.equals("n")) {
 
-                    System.out.println("invalid input");
-                    System.out.println("try again!!");
-                    break;
+                System.out.println("welcome again :)");
+                continue;
+            } else if (dj.equals("m")) {
 
-                }
+                option.main();
 
+
+            } else {
+
+                System.out.println("invalid input");
+                System.out.println("try again!!");
+                break;
 
             }
 
 
         }
+
+
     }
+}
 
-    class evenOdd extends index {
-        // Class to check even or odd
-        public static void main() {
+class chargbf {
+    // Class responsible for the coulomb force between charges menu "7"
 
-            while (true) {
-                System.out.println("enter the number you want to check");
-                int a = sc.nextInt();
-                if (a % 2 == 0) {
-                    System.out.println(a + "is even");
-                } else {
-                    System.out.println(a + "is odd");
-                }
+    public static void main() {
 
-                System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
-                String dj = sc.next();
-                if (dj.equals("y")) {
-                    break;
-
-
-                } else if (dj.equals("n")) {
-
-                    System.out.println("welcome again :)");
-                    continue;
-                } else if (dj.equals("m")) {
-
-                    option.main();
-
-
-                } else {
-
-                    System.out.println("invalid input");
-                    System.out.println("try again!!");
-                    break;
-
-                }
-
-
-            }
-
-
-        }
-    }
-
-    class chargbf {
-        // Class responsible for the coulomb force between charges menu "7"
-
-        public static void main() {
-
-            while (true) {
-                System.out.println("enter the first charge billow ( Should be in Coulomb) :-");
-                int a = sc.nextInt();
-                System.out.println("enter the second charge billow ( Should be in Coulomb) :-");
-                int b = sc.nextInt();
-                System.out.println("ok ! lets enter the distance between charges (Should be in meter):-");
-                float c = sc.nextFloat();
-                BigInteger d = new BigInteger("1");
-                BigInteger e = new BigInteger("9000000000");
-                d = d.divide(e);
-                System.out.println(d);
+        while (true) {
+            System.out.println("enter the first charge billow ( Should be in Coulomb) :-");
+            int a = sc.nextInt();
+            System.out.println("enter the second charge billow ( Should be in Coulomb) :-");
+            int b = sc.nextInt();
+            System.out.println("ok ! lets enter the distance between charges (Should be in meter):-");
+            float c = sc.nextFloat();
+            BigInteger d = new BigInteger("1");
+            BigInteger e = new BigInteger("9000000000");
+            d = d.divide(e);
+            System.out.println(d);
 
 
 
@@ -402,34 +406,32 @@ class option extends index {
 
 
 
-                System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
-                String dj = sc.next();
-                if (dj.equals("y")) {
-                    break;
+            System.out.println("do you want to quit or you want to go to the menu(if yes enter 'y' else enter 'n' )" + "(for menu enter m)");
+            String dj = sc.next();
+            if (dj.equals("y")) {
+                break;
 
 
-                } else if (dj.equals("n")) {
+            } else if (dj.equals("n")) {
 
-                    System.out.println("welcome again :)");
-                    continue;
-                } else if (dj.equals("m")) {
+                System.out.println("welcome again :)");
+                continue;
+            } else if (dj.equals("m")) {
 
-                    option.main();
+                option.main();
 
 
-                } else {
+            } else {
 
-                    System.out.println("invalid input");
-                    System.out.println("try again!!");
-                    break;
-
-                }
-
+                System.out.println("invalid input");
+                System.out.println("try again!!");
+                break;
 
             }
 
 
         }
+
 
     }
 
